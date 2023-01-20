@@ -1,0 +1,46 @@
+/* Start Global */
+html, body {
+    overflow-x: hidden !important;
+}
+
+*, body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* End Global */
+
+
+/* Strat variables */
+:root {
+    --color-denger: #dc3545;
+}
+/* End variables */
+
+
+nav {
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+/* input:focus,
+button:focus {
+    outline: none !important;
+} */
+
+nav .icons-nav li {
+    padding: 8px;
+    transition: 0.6s ease-in-out;
+}
+
+nav .icons-nav li:hover {
+    color: var(--color-denger) !important;
+    background-color: #fff !important;
+    /* transform: rotate3d(23, 1, 23, 20deg) scale(1.1); */
+    transform: rotate(360deg);
+}
+
+
+nav .nav-link:hover, .active {
+    color: var(--color-denger) !important;
+    transition: 0.6s ease;
+}
+

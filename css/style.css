@@ -1,5 +1,9 @@
+/* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;500;700&family=Poppins:wght@300;400;500&display=swap');
+
 /* Start Global */
 html, body {
+    font-family: var(--Poppins-font);
     overflow-x: hidden !important;
 }
 
@@ -8,21 +12,79 @@ html, body {
     padding: 0;
     box-sizing: border-box;
 }
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
 /* End Global */
+
+.btn:focus,
+.btn:active,
+input,
+input:focus{
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+} 
+
 
 
 /* Strat variables */
 :root {
+    --Kaisei-font: 'Kaisei Tokumin', serif;
+    --Poppins-font: 'Poppins', sans-serif;
     --color-denger: #dc3545;
+    --black-color: #0b090a;
+    --white-color: #fff;
+    --main-trans: all 0.3s ease-in-out;
 }
 /* End variables */
 
+.black{color: var(--black-color); font-weight: 800;}
+.main-color{color: var(--color-denger);}
+.Kaisei{font-family: var(--Kaisei-font);}
+.poppins{font-family: var(--Poppins-font);}
 
+
+/* Title */
+
+.title h2::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 50px;
+    background-color: var(--color-denger);
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Button */
+.btn-primary{
+    background-color: var(--color-denger);
+    display: block;
+    text-transform: uppercase;
+    width: fit-content;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition:  var(--main-trans);
+}
+
+.btn-primary:hover {
+    background-color: #f44254 !important;
+}
+
+
+/* Navbar */
 nav {
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 /* input:focus,
 button:focus {
+    border: none !important;
     outline: none !important;
 } */
 
@@ -31,16 +93,107 @@ nav .icons-nav li {
     transition: 0.6s ease-in-out;
 }
 
-nav .icons-nav li:hover {
+/* nav .nav-btns {
+    padding: 8px;
+    width: 40px;
+    transition: 0.6s ease-in-out;
+}
+
+nav .nav-btns i:hover {
     color: var(--color-denger) !important;
-    background-color: #fff !important;
-    /* transform: rotate3d(23, 1, 23, 20deg) scale(1.1); */
+    background-color: var(--white-color) !important;
+    transform: rotate3d(23, 1, 23, 20deg) scale(1.1);
     transform: rotate(360deg);
+}  */
+
+
+nav #navMenu:hover, .active {
+    color: var(--color-denger) !important;
+    transition: 0.6s ease;
+}
+
+.icons{
+    background-color: #f44254;
+}
+
+.badge{
+    background: var(--color-denger);
+}
+
+.search-box{
+    height: 35px;
+    max-width: 45px;
+    width: 100%;
+    margin: 0 15px;
+    border-radius: 6px;
+    color: var(--white-color);
+    transition: var(--main-trans);
+}
+.search-box.open{
+    max-width: 250px;
+    padding: 0 10px 0 35px;
+    
+}
+.search-input{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    border: 1px solid var(--color-denger);
+    color: var(--color-denger);
+}
+.icon{
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: -8px;
+    width: 45px;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-denger);
+    color: var(--white-color);
+}
+.search-icon,
+.close-icon{
+    position: absolute;
+    top: 50%;
+    font-size: 22px;
+    transition: all 0.6a cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.search-icon{
+    transform: translateY(-50%) rotate(90deg);
+}
+.search-box.open .search-icon{
+    transform: translateY(-50%) rotate(0);
+}
+.close-icon{
+    right: -43px;
+    color: var(--white-color);
+    background-color: var(--color-denger);
+    padding: 5px 14px;
+    border-radius: 3px;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-50%);
+}
+.search-box.open .close-icon{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(-50%) rotate(180deg);
 }
 
 
-nav .nav-link:hover, .active {
-    color: var(--color-denger) !important;
-    transition: 0.6s ease;
+
+
+
+
+
+.swiper-slide{
+    min-height: fit-content;
+}
+
+#blog{
+    height: 420px;
 }
 

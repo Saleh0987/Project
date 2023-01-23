@@ -83,9 +83,24 @@ nav {
     height: 80px;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
+<<<<<<< Updated upstream
+=======
+/* input:focus,
+button:focus {
+    outline: none !important;
+} */
+/* nav .navbar-top form {
+    width: 600px;
+} */
+
+nav .icons-nav {
+    text-align: center;
+}
+>>>>>>> Stashed changes
 
 nav .icons-nav li {
     padding: 8px;
+    width: 40px;
     transition: 0.6s ease-in-out;
 }
 
@@ -116,6 +131,7 @@ nav .nav-btns button .icon {
     transform: rotate(360deg);
 }
 
+<<<<<<< Updated upstream
 .badge{
     background: var(--color-denger);
 }
@@ -128,6 +144,14 @@ nav .nav-btns button .icon {
     border-radius: 6px;
     color: var(--black-color) !important;
     transition: var(--main-trans);
+=======
+nav .nav-link {
+    transition: 0.6s ease;
+}
+
+nav .nav-link:hover, .active {
+    color: var(--color-denger) !important;
+>>>>>>> Stashed changes
 }
 
 .search-box.open{

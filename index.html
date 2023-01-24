@@ -175,60 +175,296 @@
 
 
   <!-- ===== Services ===== -->
-   <section class="services py-5"> 
+   <section class="services "> 
       <div class="container">
 
-        <div class="title mt-1 pb-4 py-5 text-center">
-          <h2 class="position-relative d-inline-block ms-4 black Kaisei text-capitalize">
-            Our serveses
-          </h2>
-        </div>
-        
-        <div class="row gap-1">
-
-          <div class="box-countr col-md-6 col-lg-4 col-xl-3 p-2">
-            <div class="text-center">
-              <i class="fa-sharp fa-solid fa-gem mb-3 fs-1"></i>
-              <h6 class="card-subtitle mb-2 text-muted fs-3 number">5000</h6>
-              <h5 class="card-title fw-bold">Happy Client</h5>
-            </div>
+        <div class="services-items">
+          <div class="title py-5 text-center">
+            <h2 class="position-relative d-inline-block ms-4 black Kaisei text-capitalize">
+              Our services
+            </h2>
           </div>
-
-        <div class="box-countr col-md-6 col-lg-4 col-xl-3 p-2">
-          <div class="text-center">
-            <i class="fa-sharp fa-solid fa-gem mb-3 fs-1"></i>
-            <h6 class="card-subtitle mb-2 text-muted fs-3 number">5000</h6>
-            <h5 class="card-title fw-bold">Happy Client</h5>
+          
+          <div class="row gap-0 number-container">
+  
+          <div class="box-countr text-center nums col-md-6 col-lg-4 col-xl-3 p-4">
+              <i class="fa-sharp fa-solid fa-gem mb-4 fs-1"></i>
+              <h6 class="card-subtitle mb-3 text-muted fs-4 number" data-goal="4200">3451</h6>
+              <h5 class="card-title fs-3">Happy Client</h5>
           </div>
-        </div>
-
-        <div class="box-countr col-md-6 col-lg-4 col-xl-3 p-2">
-            <div class="text-center">
-              <i class="fa-sharp fa-solid fa-gem mb-3 fs-1"></i>
-              <h6 class="card-subtitle mb-2 text-muted fs-3 number">5000</h6>
-              <h5 class="card-title fw-bold">Happy Client</h5>
-            </div>
+  
+          <div class="box-countr text-center nums col-md-6 col-lg-4 col-xl-3 p-4">
+              <i class="fa-solid fa-money-bill-transfer mb-4 fs-1"></i>
+              <h6 class="card-subtitle mb-3 text-muted fs-4 number" data-goal="2452">1124</h6>
+              <h5 class="card-title fs-3">Easy Pay</h5>
           </div>
-
-          <div class="box-countr col-md-6 col-lg-4 col-xl-3 p-2">
-            <div class="text-center">
-              <i class="fa-sharp fa-solid fa-gem mb-3 fs-1"></i>
-              <h6 class="card-subtitle mb-2 text-muted fs-3 number">5000</h6>
-              <h5 class="card-title fw-bold">Happy Client</h5>
-            </div>
+  
+          <div class="box-countr text-center nums col-md-6 col-lg-4 col-xl-3 p-4">
+                <i class="fa-solid fa-truck mb-4 fs-1"></i>
+                <h6 class="card-subtitle mb-3 text-muted fs-4 number" data-goal="154">100</h6>
+                <h5 class="card-title fs-3">Fast Delivery</h5>
           </div>
-
+  
+          <div class="box-countr text-center nums col-md-6 col-lg-4 col-xl-3 p-4">
+              <i class="fa-brands fa-shopify mb-4 fs-1"></i>
+              <h6 class="card-subtitle mb-3 text-muted fs-4 number" data-goal="1800">50</h6>
+              <h5 class="card-title fs-3">Product Received</h5>
+          </div>
         </div>
 
+        </div>
 
       </div>
    </section>
 
 
+   
+  <!-- ===== Products ===== -->
+   <section id="products" class="py-5">
+    
+    <div class="container">
+
+      <div class="title mt-1 pb-4 text-center">
+        <h2 class="position-relative d-inline-block ms-4 black Kaisei text-capitalize">
+          Our Products
+        </h2>
+      </div>
+
+      <div class="row g-0">
+        <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-groub">
+          <button type="button" data-filter="*" class="btn m-2 text-dark active-filter-btn">All</button>
+          <button type="button" data-filter=".mens" class="btn m-2 text-dark">Men's</button>
+          <button type="button" data-filter=".womens" class="btn m-2 text-dark">Women's</button>
+          <button type="button" data-filter=".kids" class="btn m-2 text-dark">Kids</button>
+          <button type="button" data-filter=".baby" class="btn m-2 text-dark">Baby</button>
+          <button type="button" data-filter=".best" class="btn m-2 text-dark">Best</button>
+        </div>
+
+
+        <div class="products-list mt-4 row gx-0 gy-3" id="MenuItem">
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products womens">
+            <div class="products-img position-relative">
+              <img src="img/clothes-1.jpg" alt="products-1" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-25%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-center mt-2 ms-auto price-quantity">
+                <i class="fa-solid fa-minus"></i>
+                <div class="quantity px-2">0</div>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between mt-2">
+                <span class="text-capitalize fs-5">Girl's Shirt</span>
+                <span class="fw-bold db-block">$129.99</span>
+              </div>
+              <!-- <button type="button" class="btn btn-add mt-2">Add to Cart</button> -->
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products mens">
+            <div class="products-img position-relative">
+              <img src="img/jacket-1.jpg" alt="products-2" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-55%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">Men's jacket</span>
+                <span class="fw-bold db-block">$299.99</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products womens">
+            <div class="products-img position-relative">
+              <img src="img/party-wear-1.jpg" alt="products-3" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-35%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">Party Wear</span>
+                <span class="fw-bold db-block">$350</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products baby">
+            <div class="products-img position-relative">
+              <img src="img/clothes-2.jpg" alt="products-4" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-65%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">Pink Shirt</span>
+                <span class="fw-bold db-block">$119.99</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products mens">
+            <div class="products-img position-relative">
+              <img src="img/jacket-6.jpg" alt="products-5" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-55%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">Men's jacket</span>
+                <span class="fw-bold db-block">$299.99</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products best">
+            <div class="products-img position-relative">
+              <img src="img/shirt-2.jpg" alt="products-6" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-55%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">White Shirt</span>
+                <span class="fw-bold db-block">$299.99</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products best">
+            <div class="products-img position-relative">
+              <img src="img/watch-1.jpg" alt="products-7" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-55%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">Smart Watch</span>
+                <span class="fw-bold db-block">$299.99</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+          <div class="col-md-6 col-lg-4 col-xl-3 px-1 py-2 box-products kids">
+            <div class="products-img position-relative">
+              <img src="img/shorts-1.jpg" alt="products-8" class="w-100">
+<span class="position-absolute bg-primary text-white d-flex align-items-center justify-content-center ">-55%</span>
+            </div>
+
+            <div class="px-1">
+              <div class="rating mt-1 text-center">
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+                <span class="starts"><i class="fas fa-star"></i></span>
+              </div>
+
+              <div class="d-flex align-items-center justify-content-between  mt-2">
+                <span class="text-capitalize fs-5">Boy Shorts</span>
+                <span class="fw-bold db-block">$299.99</span>
+              </div>
+              <button type="button" class="btn btn-add mt-2">Add to Cart</button>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+    </section>
+
 
 
   <!-- ===== jquery File ===== -->
   <script src="js/jquery-3.6.3.min.js"></script>
+  <!-- ===== Isotope js filter File ===== -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
   <!-- ===== BootStrap Js File ===== -->
   <script src="bootstrap/js/bootstrap.min.js"></script>
   <!-- ===== Js File ===== -->

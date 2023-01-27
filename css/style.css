@@ -32,7 +32,7 @@ input:focus{
 
 .icon {
     /* background-color: #f44254; */
-    background-color: var(--color-denger);
+    background-color: var(--color-danger);
     width: 40px;
     height: 40px;
     border-radius: 25px;
@@ -44,12 +44,17 @@ input:focus{
     transform: rotate(360deg);
 }
 
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
 
 /* Strat variables */
 :root {
     --Kaisei-font: 'Kaisei Tokumin', serif;
     --Poppins-font: 'Poppins', sans-serif;
-    --color-denger: #dc3545;
+    --color-danger: #dc3545;
     --black-color: #0b090a;
     --white-color: #fff;
     --main-trans: all 0.3s ease-in-out;
@@ -57,7 +62,7 @@ input:focus{
 /* End variables */
 
 .black{color: var(--black-color); font-weight: 800;}
-.main-color{color: var(--color-denger);}
+.main-color{color: var(--color-danger);}
 .Kaisei{font-family: var(--Kaisei-font);}
 .poppins{font-family: var(--Poppins-font);}
 
@@ -69,7 +74,7 @@ input:focus{
     content: "";
     width: 4px;
     height: 50px;
-    background-color: var(--color-denger);
+    background-color: var(--color-danger);
     left: -20px;
     top: 50%;
     transform: translateY(-50%);
@@ -77,7 +82,7 @@ input:focus{
 
 /* Button */
 .btn-primary{
-    background-color: var(--color-denger);
+    background-color: var(--color-danger);
     display: block;
     text-transform: uppercase;
     width: fit-content;
@@ -111,11 +116,11 @@ nav .icons-nav li {
 }
 
 .navbar-nav .nav-item a:hover{
-    color: var(--color-denger);
+    color: var(--color-danger);
 }
 
 .navbar-nav .nav-item:first-child a {
-    color: var(--color-denger) !important;
+    color: var(--color-danger) !important;
 }
 
 
@@ -133,7 +138,7 @@ nav .icons-nav li {
 } */
 
 .badge{
-    background: var(--color-denger);
+    background: var(--color-danger);
 }
 
 .search-box{
@@ -174,7 +179,7 @@ nav .icons-nav li {
     border-radius: 25px;
     display: flex;
     justify-content: center;
-    background-color: var(--color-denger);
+    background-color: var(--color-danger);
 }
 
 .search-icon,
@@ -195,7 +200,7 @@ nav .icons-nav li {
 .close-icon{
     right: -43px;
     color: var(--white-color);
-    background-color: var(--color-denger);
+    background-color: var(--color-danger);
     padding: 10px;
     border-radius: 10%;
     opacity: 0;
@@ -257,7 +262,7 @@ nav .icons-nav li {
     transform: scale(1.1);
 } */
 .box-countr i{
-    color: var(--color-denger);
+    color: var(--color-danger);
 }
 
 
@@ -275,7 +280,7 @@ nav .icons-nav li {
 }  */
 
 .home .control-prev button span {
-    background-color: red;
+    background-color: var(--color-danger);
     border-radius: 20px;
     font-size: 10px;
     opacity: 0;
@@ -293,7 +298,7 @@ nav .icons-nav li {
 }
 
 .active-filter-btn{
-    background-color: var(--color-denger);
+    background-color: var(--color-danger);
     color: #fff !important;
 }
 
@@ -314,7 +319,7 @@ nav .icons-nav li {
 }
 
 .btn-add{
-    background-color: var(--color-denger) ;
+    background-color: var(--color-danger) ;
     width: 100%;
     color: #fff;
 }
@@ -329,6 +334,32 @@ nav .icons-nav li {
 .fa-minus{
     color: red;
 }
+
 .fa-plus{
     color: green;
+}
+
+
+
+/* Start Top Rated */
+#top-rated .imgs img {
+    width: 100%;
+    transition: transform .5s ease-in;
+}
+
+#top-rated .imgs img:hover {
+    transform: scale(1.1);
+}
+
+#top-rated .imgs .small-imgs img {
+    height: 118px;
+    margin: 2px 0;
+}
+
+#top-rated .imgs .big-imgs img {
+    height: 487px;
+}
+
+#top-rated .info {
+    height: 485px;
 }

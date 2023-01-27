@@ -4,7 +4,7 @@
 /* Start Global */
 html, body {
     font-family: var(--Poppins-font);
-    overflow-x: hidden !important;
+    /* overflow-x: hidden !important; */
 }
 
 *, body, html {
@@ -19,6 +19,8 @@ a {
 }
 /* End Global */
 
+
+/* Start Framework */
 .btn:focus,
 .btn:active,
 input,
@@ -28,6 +30,19 @@ input:focus{
     box-shadow: none !important;
 } 
 
+.icon {
+    /* background-color: #f44254; */
+    background-color: var(--color-denger);
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    line-height: 40px !important;
+    transition: var(--main-trans);
+}
+
+.icon:hover{
+    transform: rotate(360deg);
+}
 
 
 /* Strat variables */
@@ -104,7 +119,7 @@ nav .icons-nav li {
 }
 
 
-nav .nav-btns button .icon {
+/* nav .nav-btns button .icon {
     background-color: #f44254;
     width: 40px;
     height: 40px;
@@ -115,7 +130,7 @@ nav .nav-btns button .icon {
 
 .icon:hover{
     transform: rotate(360deg);
-}
+} */
 
 .badge{
     background: var(--color-denger);
@@ -212,18 +227,31 @@ nav .nav-btns button .icon {
     display: flex;
 } */
 
+.services .services-items .number-container
+{
+    gap: 10px;
+}
 
 .services .services-items .box-countr{
     /* box-shadow: 16px 25px 62px 5px rgba(114, 36, 36, 0.18); */
-    box-shadow: -10px -10px 40px 10px inset rgba(252, 0, 0, 0.18);
-    background-color: var(--black-color);
+    background-color: var(--white-color);
     transition: var(--main-trans);
-    width: 235px;
-    border-right: 3px solid #dc3545;
-    border-bottom: 3px solid #dc3545;
-    border-radius: 0 0 30px 0;
-    margin: 0 5px 5px 0;
+    line-height: 90px;
+    font-size: 1.60rem!important;
+
+    /* margin: 0 5px 5px 0; */
+    height: 230px;
+    width: 277px;
 }
+
+.services .services-items .box-countr:hover {
+    border: 1px solid #dc3545;
+    /* border-right: 3px solid #dc3545;
+    border-bottom: 3px solid #dc3545; */
+    box-shadow: -10px -10px 40px 10px inset rgba(252, 0, 0, 0.18);
+    border-radius: 30px 0 30px 0;
+}
+
 
 /* .box-countr:hover{
     transform: scale(1.1);
@@ -259,6 +287,11 @@ nav .nav-btns button .icon {
 }
 
 /* Products */
+#products
+{
+    height: 685px;
+}
+
 .active-filter-btn{
     background-color: var(--color-denger);
     color: #fff !important;
@@ -288,4 +321,14 @@ nav .nav-btns button .icon {
 .btn-add:hover{
     background-color: #f44254;
     color: #fff;
+}
+.price-quantity{
+    cursor: pointer;
+}
+
+.fa-minus{
+    color: red;
+}
+.fa-plus{
+    color: green;
 }

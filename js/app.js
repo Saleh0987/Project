@@ -43,6 +43,7 @@ function startCount(el) {
 var $grid = $('.products-list').isotope({
   // options
 });
+
 // filter items on button click
 $('.filter-button-groub').on( 'click', 'button', function() {
   var filterValue = $(this).attr('data-filter');
@@ -60,35 +61,9 @@ function resetFilterBtns() {
 }
 
 
-//==== Products
-let products = [
-  {
-    id: 1,
-    img: "img/clothes-1.jpg",
-    title: "Girl's Shirt",
-    price: 129.99,
-    qty: 1,
-  },
-  {
-    id: 2,
-    img: "img/clothes-1.jpg",
-    title: "Girl's Shirt",
-    price: 129.99,
-    qty: 1,
-  },
-  {
-    id: 3,
-    img: "img/clothes-1.jpg",
-    title: "Girl's Shirt",
-    price: 129.99,
-    qty: 1,
-  },
-  {
-    id: 4,
-    img: "img/clothes-1.jpg",
-    title: "Girl's Shirt",
-    price: 129.99,
-    qty: 1,
-  },
-]
+
+
+
+
+
 

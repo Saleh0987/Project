@@ -73,3 +73,49 @@ var increment = function increment(id) {
 //   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 // };
 // calculation();
+// Start Top Rated
+
+
+var imagesRatedBox = document.getElementById("imagesRatedBox");
+var RatedItemData = [{
+  id: "1",
+  img: "img/f1.jpg",
+  title: "women's rodeo jeans",
+  price: 120.99
+}, {
+  id: "2",
+  img: "img/f2.jpg",
+  title: "women's rodeo jeans",
+  price: 120.99
+}, {
+  id: "3",
+  img: "img/f3.jpg",
+  title: "women's rodeo jeans",
+  price: 120.99
+}, {
+  id: "4",
+  img: "img/f4.jpg",
+  title: "women's rodeo jeans",
+  price: 120.99
+}, {
+  id: "5",
+  img: "img/f5.jpg",
+  title: "women's rodeo jeans",
+  price: 120.99
+}];
+
+var generateRated = function generateRated() {
+  return imagesRatedBox.innerHTML = RatedItemData.map(function (x) {
+    var id = x.id,
+        img = x.img,
+        title = x.title,
+        price = x.price;
+    return "\n    <div class=\"row\">\n        <div class=\"col-xl-6 imgs\" id=\"".concat(id, "\">\n          <div class=\"row\">\n            <div class=\"col-3 small-imgs\">\n              <img src=\"").concat(img, "\" onclick=\"clickImg(this)\" alt=\"\">\n            </div>\n            <div class=\"col-9 big-imgs\">\n              <img src=\"").concat(img, "\" id=\"mainBox\" alt=\"\">\n            </div>\n          </div>\n        </div>\n\n        <div class=\"col-xl-6 info d-flex flex-column justify-content-center\">\n          <h3 class=\"pb-3 black text-capitalize mb-4\">").concat(title, "</h3>\n\n          <ul class=\"stars-rated d-flex mb-4\">\n            <li class=\"mx-1\"><i class=\"fa-sharp fa-solid fa-star text-warning\"></i></li>\n            <li class=\"mx-1\"><i class=\"fa-sharp fa-solid fa-star text-warning\"></i></li>\n            <li class=\"mx-1\"><i class=\"fa-sharp fa-solid fa-star text-warning\"></i></li>\n            <li class=\"mx-1\"><i class=\"fa-sharp fa-solid fa-star text-warning\"></i></li>\n            <li class=\"mx-1\"><i class=\"fa-sharp fa-solid fa-star text-warning\"></i></li>\n          </ul>\n\n          <p class=\"text-secondary text-capitalize fs-6 mb-4\">lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquam asperiores odio\n            aperiam veniam quod\n            accusantium perferendis modi, iusto a ab ullam et reprehenderit. Ipsum quasi itaque ipsam aperiam\n            facilis?</p>\n\n          <div class=\"price text-uppercase text-danger fw-bold fs-4 mb-4\">").concat(price, " egp <span class=\"text-decoration-line-through black fs-6\">200.99 egp</span></div>  \n          \n          <a href=\"#\" class=\"btn-primary text-upercase bw-bold border-0 mt-5\">add to cart</a>\n\n        </div>\n      </div>\n    ");
+  }).join("");
+};
+
+generateRated();
+
+var increment2 = function increment2(id) {
+  console.log(id);
+};

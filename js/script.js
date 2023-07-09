@@ -119,3 +119,89 @@ let increment = (id) => {
 //   cartIcon.innerHTML = basket.map((x) => x.item).reduce((x, y) => x + y, 0);
 // };
 // calculation();
+
+
+
+// Start Top Rated
+let imagesRatedBox = document.getElementById("imagesRatedBox");
+
+let RatedItemData = [
+  {
+    id: "1",
+    img: "img/f1.jpg",
+    title: "women's rodeo jeans",
+    price: 120.99,
+  },
+  {
+    id: "2",
+    img: "img/f2.jpg",
+    title: "women's rodeo jeans",
+    price: 120.99,
+  },
+  {
+    id: "3",
+    img: "img/f3.jpg",
+    title: "women's rodeo jeans",
+    price: 120.99,
+  },
+  {
+    id: "4",
+    img: "img/f4.jpg",
+    title: "women's rodeo jeans",
+    price: 120.99,
+  },
+  {
+    id: "5",
+    img: "img/f5.jpg",
+    title: "women's rodeo jeans",
+    price: 120.99,
+  },
+]
+
+let generateRated = () => {
+  return (imagesRatedBox.innerHTML = RatedItemData.map((x) => {
+    let { id, img, title, price } = x;
+    
+    return `
+    <div class="row">
+        <div class="col-xl-6 imgs" id="${id}">
+          <div class="row">
+            <div class="col-3 small-imgs">
+              <img src="${img}" onclick="clickImg(this)" alt="">
+            </div>
+            <div class="col-9 big-imgs">
+              <img src="${img}" id="mainBox" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-6 info d-flex flex-column justify-content-center">
+          <h3 class="pb-3 black text-capitalize mb-4">${title}</h3>
+
+          <ul class="stars-rated d-flex mb-4">
+            <li class="mx-1"><i class="fa-sharp fa-solid fa-star text-warning"></i></li>
+            <li class="mx-1"><i class="fa-sharp fa-solid fa-star text-warning"></i></li>
+            <li class="mx-1"><i class="fa-sharp fa-solid fa-star text-warning"></i></li>
+            <li class="mx-1"><i class="fa-sharp fa-solid fa-star text-warning"></i></li>
+            <li class="mx-1"><i class="fa-sharp fa-solid fa-star text-warning"></i></li>
+          </ul>
+
+          <p class="text-secondary text-capitalize fs-6 mb-4">lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aliquam asperiores odio
+            aperiam veniam quod
+            accusantium perferendis modi, iusto a ab ullam et reprehenderit. Ipsum quasi itaque ipsam aperiam
+            facilis?</p>
+
+          <div class="price text-uppercase text-danger fw-bold fs-4 mb-4">${price} egp <span class="text-decoration-line-through black fs-6">200.99 egp</span></div>  
+          
+          <a href="#" class="btn-primary text-upercase bw-bold border-0 mt-5">add to cart</a>
+
+        </div>
+      </div>
+    `
+  }).join(""));
+};
+generateRated();
+
+let increment2 = (id) => {
+  console.log(id);
+}
